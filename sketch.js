@@ -1,6 +1,6 @@
 var hr, mn, sc;
 var hrAngle, mnAngle, scAngle; 
-var c = ":";
+
 function setup(){
     createCanvas(600,600); 
     
@@ -19,13 +19,6 @@ function draw(){
     mn = minute();
     sc = second();
     
-    push();
-    translate(0, 0)
-    rotate(+90)
-    fill("white");
-    text(mouseX + c + mouseY, 100, 5);
-    text(hr + c + mn + c + sc, 10, 10);
-    pop();
 
     //seconds
     scAngle = map(sc, 0, 60, 0, 360);
